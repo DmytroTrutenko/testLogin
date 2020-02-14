@@ -1,4 +1,4 @@
-package testTask;
+package TestTask;
 
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class firstTest {
+public class FirstTest {
     private static WebDriver driver;
 
     @BeforeEach
