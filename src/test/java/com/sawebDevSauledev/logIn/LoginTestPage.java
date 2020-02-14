@@ -1,5 +1,6 @@
 package com.sawebDevSauledev.logIn;
 
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -44,8 +45,15 @@ public class LoginTestPage {
         username.sendKeys(login);
         password.sendKeys(pass);
         buttonLogIn.click();
-        //after sendKeys and wrong login-password, we'll see this h3.
-        wait.until(ExpectedConditions.visibilityOfElementLocated(h3Text));
-    }
 
+        //validation n1
+        wait.until(ExpectedConditions.visibilityOfElementLocated(h3Text));
+
+        //validation n2
+        String actualUrl = "https://saweb.dev.sauledev.com/en/user/login";
+        String expectedUrl = driver.getCurrentUrl();
+        Assertions.assertEquals(expectedUrl, actualUrl);
+    }
 }
+
+
