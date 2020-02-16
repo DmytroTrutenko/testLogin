@@ -4,8 +4,6 @@ import com.sawebDevSauledev.WebDriverSettings;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.support.PageFactory;
 
-
-
 public class LoginTest extends WebDriverSettings {
 
     @Test

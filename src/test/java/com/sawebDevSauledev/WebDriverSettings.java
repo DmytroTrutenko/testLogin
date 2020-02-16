@@ -15,11 +15,12 @@ public class WebDriverSettings {
     public void setup() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver80_0_3987.exe");
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
         wait = new WebDriverWait(driver, 10);
     }
 
     @AfterEach
     public void tearDown() {
-        driver.quit();
+//        driver.quit();
     }
 }
