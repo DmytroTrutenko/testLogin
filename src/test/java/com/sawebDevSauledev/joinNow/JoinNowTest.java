@@ -1,4 +1,4 @@
-package joinNow;
+package com.sawebDevSauledev.joinNow;
 
 import com.sawebDevSauledev.WebDriverSettings;
 import org.junit.jupiter.api.Test;
